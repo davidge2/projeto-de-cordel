@@ -7,6 +7,10 @@
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
+    --color0: #ffffff;
+    --color1: #000000;
+    --color2: #a9a9a9;
+    --color3: #a6c0c0;
 }
 
 *{
@@ -16,12 +20,12 @@
 
 html, body{
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: var(--color2);
     font-family: var(--fonte1);
 }
 header{
-    background-color: black;
-    color: white;
+    background-color: var(--color1);
+    color:var(--color0);
     text-align: center;
 }
 header > h1{
@@ -32,29 +36,23 @@ header > h1{
 }
 
 
-
 header > p{
     padding-bottom: 50px;
 }
 
 
-
-
 a{
-    color: white;
+    color:var(--color0);
     text-decoration: none;
+    font-weight: bolder;
 }
-
-
-
 
 a:hover{
     text-decoration: underline;
 }
 
-
 section{
-    padding-top:10vh ;
+    padding-top:10vh;
     padding-bottom:10vh ;
     line-height: 2em;
     padding-left: 30px;
@@ -67,16 +65,15 @@ section > p{
     padding-bottom: 2em;
 }
 
-
-
 section.normal{
-    background-color: rgb(252, 244, 244);
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
+    font-size: 3.5vw;
 }
 
 
 section.imagem{
-    background-color: rgb(166, 192, 192);
+    background-color: #a6c0c0;
     color: rgb(212, 212, 230);
     box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.418);
     background-size: cover;
@@ -85,19 +82,22 @@ section.imagem{
 
 
 section.imagem > P{
-   display: inline-block;
-   padding: 10px;
-   background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
 }
 
 section#img01{
     background-image: url(../imagens/background001.jpg);
     background-position: right center;
+    
    
 }
 section#img02{
-background-image: url(../imagens/background002.jpg);
+    background-image: url(../imagens/background002.jpg);
 }
+
 footer{
     background-color: black;
     color: white;
